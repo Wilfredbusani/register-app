@@ -11,5 +11,12 @@ jobs:
     steps:
     - name: Get Source Code from Git
       uses: actions/checkout@v4
-      
+    - name: Install Java
+      uses: actions/setup-java@v4
+      with:
+        java-version: "17"
+        distribution: "temurin"
+        cache: maven
+    - name: Compile The Code
+      run: mvn compile
       
