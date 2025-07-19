@@ -1,0 +1,15 @@
+name: register-app pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+
+jobs:
+  Git-Checkout:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get Source Code from Git
+      uses: actions/checkout@v4
+      
+      
