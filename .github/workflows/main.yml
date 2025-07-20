@@ -23,6 +23,9 @@ jobs:
       run: mvn package
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
+      with:
+        name: .jar file upload
+        path: ./target/*.jar
 
   Send_to_DockerHub:
     runs-on: ubuntu-latest
