@@ -26,6 +26,7 @@ jobs:
       with:
         name: .jar file upload
         path: ./target/*.war
+        
 
   Send_to_DockerHub:
     runs-on: ubuntu-latest
