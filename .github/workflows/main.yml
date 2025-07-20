@@ -58,5 +58,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: busani446/register-app:v2
+        tags: busani446/register-app:v3
       
