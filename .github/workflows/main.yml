@@ -34,11 +34,10 @@ jobs:
     steps:
     - name: Download Artifact
       uses: actions/download-artifact@v4
-      with: Path to put Artifact
+      with: 
         name: Put Atrifact in Current Working Directory
         path: ./
       
-
     - name: List The Downloaded Artifact
       run: ls -lh
 
